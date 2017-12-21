@@ -71,5 +71,21 @@ body .contact-header .contact-btn a {
     padding: 12px 123px 12px 23px;
 }
 
+body .empty-gray {
+    height: 80px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+#map {
+    width: 100%;
+    height: 645px;
+}
+
+body .contact-form-block {
+    background-color: #f6f6f6;
+    padding: 0 120px 0 120px;
+}
+
 
 

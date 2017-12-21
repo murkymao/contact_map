@@ -8,6 +8,7 @@
     <link rel="stylesheet"
           href="assets/css/style.css">
 </head>
+<body>
 <header>
     <div class="logo-top">
         <img src="assets/img/Logo.png"
@@ -21,16 +22,39 @@
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
-
     </div>
 </header>
 <div class="contact-header">
     <div class="contact-btn">
         <a href="#">CONTACT</a>
     </div>
-
 </div>
-<body>
+<div class="empty-gray"></div>
+<div id="map"></div>
+<div class="contact-form-block">
+    <div class="contact-form">
 
+    </div>
+    <div class="contact-info">
+
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var paris = {lat: 48.8419605, lng: 2.3163504};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: paris
+        });
+        var marker = new google.maps.Marker({
+            position: paris,
+            map: map
+        });
+    }
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtiOMTq2vI57dSgrWRs4p8kXnBv2StOVc&callback=initMap">
+</script>
 </body>
 </html>
