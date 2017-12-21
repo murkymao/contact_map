@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHIC.TTF") format("truetype");
+    font-style:normal;
+    font-weight: normal;
+}
+
 * {
     padding: 5px;
     margin: 0;
@@ -7,11 +14,31 @@
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f6f6f6;
     padding: 0 120px 0 120px;
+    font-family: "Century Gothic",sans-serif;
 }
 
-.nav-top ul{
+header .nav-top ul {
     display: flex;
-
+    align-items: center;
 }
+
+header .nav-top ul li {
+    list-style-type: none;
+    margin-left: 37px;
+}
+
+header .nav-top ul li:last-child {
+    background-color: #ffea00;
+    padding: 25px 0;
+}
+
+header .nav-top ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
