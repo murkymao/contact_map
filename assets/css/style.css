@@ -12,13 +12,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Century Gothic",sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f6f6f6;
     padding: 0 120px 0 120px;
-    font-family: "Century Gothic",sans-serif;
 }
 
 header .nav-top ul {
@@ -41,7 +48,7 @@ header .nav-top ul li a {
     color: inherit;
 }
 
-body .contact-btn {
+body .contact-header {
     background-image: url("../img/slider_bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -50,5 +57,19 @@ body .contact-btn {
     width: 100%;
     height: 150px;
 }
+
+body .contact-header {
+    display: flex;
+    align-items: center;
+}
+
+body .contact-header .contact-btn a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #ffea00;
+    background-color: #424146;
+    padding: 12px 123px 12px 23px;
+}
+
 
 
